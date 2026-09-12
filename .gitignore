@@ -1,0 +1,19 @@
+node_modules/
+.expo/
+dist/
+web-build/
+*.apk
+*.aab
+*.ipa
+*.tar.gz
+builder.exe
+
+# Native build artifacts
+android/app/build/
+.gradle/
+local.properties
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

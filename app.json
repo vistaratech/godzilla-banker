@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Godzilla Banker",
+    "slug": "godzilla-banker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "icon": "./assets/images/godzilla_banker_emblem.jpg",
+    "splash": {
+      "image": "./assets/images/godzilla_banker_emblem.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#060913"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.godzilla.banker",
+      "icon": "./assets/images/godzilla_banker_emblem.jpg",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "Godzilla Banker needs Bluetooth to connect to and control the ESP32 beat relay.",
+        "NSBluetoothPeripheralUsageDescription": "Godzilla Banker needs Bluetooth to communicate with your ESP32 Super Mini relay hardware."
+      }
+    },
+    "android": {
+      "package": "com.godzilla.banker",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/godzilla_banker_emblem.jpg",
+        "backgroundColor": "#060913"
+      },
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "react-native-ble-plx",
+        {
+          "isBackgroundEnabled": true,
+          "modes": [
+            "peripheral",
+            "central"
+          ],
+          "bluetoothAlwaysPermission": "Allow Godzilla Banker to connect to your ESP32 device."
+        }
+      ],
+      "expo-audio"
+    ]
+  }
+}
