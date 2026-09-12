@@ -204,6 +204,10 @@ jobs:
         if: (steps.detect.outputs.type == 'reactnative' || steps.detect.outputs.type == 'expo') && steps.node-modules-cache.outputs.cache-hit != 'true'
         run: npm install
 
+      - name: Expo Prebuild (iOS)
+        if: steps.detect.outputs.type == 'expo'
+        run: npx expo prebuild --platform ios --clean
+
       - name: Setup JDK
         if: steps.detect.outputs.type == 'kmp'
         uses: actions/setup-java@v6
@@ -290,6 +294,9 @@ jobs:
 
           # Navigate to iOS project
           cd "$IOS_PATH"
+          if [ "$PROJECT_TYPE" = "expo" ] && [ -d "ios" ]; then
+            cd ios
+          fi
 
           # Find workspace or project
           WORKSPACE=$(find . -maxdepth 1 -name "*.xcworkspace" | head -1)
