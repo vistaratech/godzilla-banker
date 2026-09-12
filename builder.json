@@ -1,0 +1,17 @@
+{
+  "project": "godzilla-banker",
+  "platform": "ios",
+  "github": {
+    "owner": "vistaratech",
+    "repo": "godzilla-banker"
+  },
+  "ios": {},
+  "flutter": {
+    "watch": {}
+  },
+  "reactNative": {
+    "expo": true
+  },
+  "kmp": {},
+  "mobai": {}
+}
