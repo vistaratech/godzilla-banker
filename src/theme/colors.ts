@@ -1,4 +1,4 @@
-// High-End Black & Blue Automotive Design Tokens for Godzilla Banker
+// High-End Black & Blue Automotive Design Tokens for Godzilla Banger
 // Deep Obsidian Blacks, Midnight Slate, Electric Cyan, and Neon Blue.
 
 export const COLORS = {

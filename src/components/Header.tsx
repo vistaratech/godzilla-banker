@@ -46,7 +46,7 @@ export const Header: React.FC<HeaderProps> = ({ bleStatus, rssi, isMock, onPress
       <View style={styles.titleRow}>
         <GodzillaMasterEmblem size={38} borderRadius={10} />
         <View>
-          <Text style={styles.title}>GODZILLA BANKER</Text>
+          <Text style={styles.title}>GODZILLA BANGER</Text>
           <Text style={styles.subtitle}>PRO GLASS RELAY MATRIX</Text>
         </View>
       </View>

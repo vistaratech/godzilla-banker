@@ -1,4 +1,4 @@
-// Spacing scale for Godzilla Banker
+// Spacing scale for Godzilla Banger
 // Consistent 4px base unit system
 
 export const SPACING = {

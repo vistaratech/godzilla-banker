@@ -1,29 +1,29 @@
 {
   "expo": {
-    "name": "Godzilla Banker",
-    "slug": "godzilla-banker",
+    "name": "Godzilla Banger",
+    "slug": "godzilla-banger",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
-    "icon": "./assets/images/godzilla_banker_emblem.jpg",
+    "icon": "./assets/images/godzilla_banger_emblem.jpg",
     "splash": {
-      "image": "./assets/images/godzilla_banker_emblem.jpg",
+      "image": "./assets/images/godzilla_banger_emblem.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#060913"
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.godzilla.banker",
-      "icon": "./assets/images/godzilla_banker_emblem.jpg",
+      "bundleIdentifier": "com.godzilla.banger",
+      "icon": "./assets/images/godzilla_banger_emblem.jpg",
       "infoPlist": {
-        "NSBluetoothAlwaysUsageDescription": "Godzilla Banker needs Bluetooth to connect to and control the ESP32 beat relay.",
-        "NSBluetoothPeripheralUsageDescription": "Godzilla Banker needs Bluetooth to communicate with your ESP32 Super Mini relay hardware."
+        "NSBluetoothAlwaysUsageDescription": "Godzilla Banger needs Bluetooth to connect to and control the ESP32 beat relay.",
+        "NSBluetoothPeripheralUsageDescription": "Godzilla Banger needs Bluetooth to communicate with your ESP32 Super Mini relay hardware."
       }
     },
     "android": {
-      "package": "com.godzilla.banker",
+      "package": "com.godzilla.banger",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/godzilla_banker_emblem.jpg",
+        "foregroundImage": "./assets/images/godzilla_banger_emblem.jpg",
         "backgroundColor": "#060913"
       },
       "permissions": [
@@ -43,7 +43,7 @@
             "peripheral",
             "central"
           ],
-          "bluetoothAlwaysPermission": "Allow Godzilla Banker to connect to your ESP32 device."
+          "bluetoothAlwaysPermission": "Allow Godzilla Banger to connect to your ESP32 device."
         }
       ],
       "expo-audio"

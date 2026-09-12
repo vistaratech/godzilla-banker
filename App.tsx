@@ -250,7 +250,7 @@ export default function App() {
     } else if (item === 'Projects') {
       Alert.alert('Projects', 'Current Beat Project auto-saved.');
     } else if (item === 'Help') {
-      Alert.alert('Help & Support', 'Godzilla Banker Automotive Beat Station\nContact: support@godzillabanker.com');
+      Alert.alert('Help & Support', 'Godzilla Banger Automotive Beat Station\nContact: support@godzillabanger.com');
     }
   };
 

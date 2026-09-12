@@ -66,7 +66,7 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
             <GodzillaLogo size={28} color="#FFFFFF" />
             <View style={styles.brandText}>
               <Text style={styles.brandTitle}>GODZILLA</Text>
-              <Text style={styles.brandSub}>BANKER</Text>
+              <Text style={styles.brandSub}>BANGER</Text>
             </View>
           </View>
         )}

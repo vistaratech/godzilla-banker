@@ -1,4 +1,4 @@
-// Strict Monochrome Theme Tokens for Godzilla Banker
+// Strict Monochrome Theme Tokens for Godzilla Banger
 import { COLORS } from '../theme/colors';
 
 export interface ColorTheme {

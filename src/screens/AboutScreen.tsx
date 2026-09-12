@@ -43,8 +43,8 @@ export const AboutScreen: React.FC<AboutScreenProps> = ({ onBack, onOpenMenu }) 
           </View>
 
           <Text style={styles.brandTitle}>GODZILLA</Text>
-          <Text style={styles.brandSubtitle}>BANKER</Text>
-          <Text style={styles.tagline}>BEATS • BUILD • BANK</Text>
+          <Text style={styles.brandSubtitle}>BANGER</Text>
+          <Text style={styles.tagline}>BEATS • BUILD • BANG</Text>
           <View style={styles.versionBadge}>
             <Text style={styles.versionText}>VERSION 2.0.0 (BUILD 60)</Text>
           </View>
@@ -93,7 +93,7 @@ export const AboutScreen: React.FC<AboutScreenProps> = ({ onBack, onOpenMenu }) 
         <View style={styles.card}>
           <Text style={styles.cardTitle}>THE CONCEPT</Text>
           <Text style={styles.paragraph}>
-            Godzilla Banker fuses high-precision automotive engineering with a modern, tactile music sequencer. Designed for rapid beat construction, hardware relay triggering, and uncompromising dark aesthetics.
+            Godzilla Banger fuses high-precision automotive engineering with a modern, tactile music sequencer. Designed for rapid beat construction, hardware relay triggering, and uncompromising dark aesthetics.
           </Text>
         </View>
 
@@ -124,7 +124,7 @@ export const AboutScreen: React.FC<AboutScreenProps> = ({ onBack, onOpenMenu }) 
 
         <View style={styles.footer}>
           <Text style={styles.copyright}>
-            © 2026 GODZILLA BANKER LABS. ALL RIGHTS RESERVED.
+            © 2026 GODZILLA BANGER LABS. ALL RIGHTS RESERVED.
           </Text>
         </View>
       </ScrollView>

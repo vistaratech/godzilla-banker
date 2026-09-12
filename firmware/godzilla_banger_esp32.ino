@@ -1,5 +1,5 @@
 /**
- * Godzilla Banker — ESP32 Firmware
+ * Godzilla Banger — ESP32 Firmware
  *
  * BLE GATT peripheral with one WRITE characteristic (commands from the app)
  * and one NOTIFY characteristic (status frames back to the app).
@@ -241,7 +241,7 @@ void setup() {
   applyRelay(0);
 
   Serial.println("\n=================================");
-  Serial.println("  GODZILLA BANKER - ESP32 SUPER MINI");
+  Serial.println("  GODZILLA BANGER - ESP32 SUPER MINI");
   Serial.println("=================================");
   Serial.printf("Relay Pin: GPIO %d\n", RELAY_PIN);
   Serial.printf("On-board LED: GPIO %d\n", LED_PIN);

@@ -1,8 +1,8 @@
 /**
- * Godzilla Banker — BLE Manager
+ * Godzilla Banger — BLE Manager
  *
  * Wraps react-native-ble-plx with a seamless simulator fallback when running inside Expo Go.
- * Talks to the ESP32 Super Mini firmware in firmware/godzilla_banker_esp32.ino over a custom GATT service:
+ * Talks to the ESP32 Super Mini firmware in firmware/godzilla_banger_esp32.ino over a custom GATT service:
  * one WRITE characteristic for commands, one NOTIFY characteristic for
  * status frames. Wire format: RELAY:1\n, RELAY:0\n, CTRL:PLAY\n, CTRL:STOP\n.
  */

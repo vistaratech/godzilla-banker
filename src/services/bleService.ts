@@ -60,11 +60,11 @@ export class BLEService {
   }
 
   /**
-   * Scans for BLE peripherals advertising the Godzilla Banker service
+   * Scans for BLE peripherals advertising the Godzilla Banger service
    */
   async scan(): Promise<BLEDeviceItem[]> {
     this.setStatus('scanning');
-    this.log('Scanning for Godzilla Banker devices...');
+    this.log('Scanning for Godzilla Banger devices...');
 
     if (this.mockMode) {
       await this._delay(800);

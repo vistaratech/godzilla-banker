@@ -1,4 +1,4 @@
-// Typography definitions for Godzilla Banker
+// Typography definitions for Godzilla Banger
 // Font: Inter / Space Grotesk / System default
 import { TextStyle, Platform } from 'react-native';
 

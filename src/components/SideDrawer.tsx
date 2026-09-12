@@ -160,7 +160,7 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
             <GodzillaLogo size={30} color="#FFFFFF" />
             <View style={styles.brandTextBlock}>
               <Text style={styles.brandTitle}>GODZILLA</Text>
-              <Text style={styles.brandSubtitle}>BANKER</Text>
+              <Text style={styles.brandSubtitle}>BANGER</Text>
             </View>
           </View>
 
@@ -214,8 +214,8 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
           <GodzillaLogo size={28} color="#00D2FF" glowOpacity={0.15} />
 
           <View style={styles.footerTextContainer}>
-            <Text style={styles.footerBrand}>GODZILLA BANKER</Text>
-            <Text style={styles.footerSlogan}>BEATS • BUILD • BANK</Text>
+            <Text style={styles.footerBrand}>GODZILLA BANGER</Text>
+            <Text style={styles.footerSlogan}>BEATS • BUILD • BANG</Text>
             <Text style={styles.footerVersion}>v2.0.0</Text>
           </View>
         </View>

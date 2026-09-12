@@ -158,12 +158,12 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onFinish }) => {
           ]}
         >
           <Text style={styles.brandTitle}>GODZILLA</Text>
-          <Text style={styles.brandSub}>BANKER</Text>
+          <Text style={styles.brandSub}>BANGER</Text>
         </Animated.View>
 
         {/* Tagline */}
         <Animated.View style={{ opacity: taglineOpacity }}>
-          <Text style={styles.tagline}>BEATS  •  BUILD  •  BANK</Text>
+          <Text style={styles.tagline}>BEATS  •  BUILD  •  BANG</Text>
         </Animated.View>
       </View>
 

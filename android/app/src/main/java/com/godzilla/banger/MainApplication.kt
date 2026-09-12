@@ -1,4 +1,4 @@
-package com.godzilla.banker
+package com.godzilla.banger
 
 import android.app.Application
 import android.content.res.Configuration

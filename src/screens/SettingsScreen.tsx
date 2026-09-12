@@ -88,7 +88,7 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({
           {/* Theme */}
           <TouchableOpacity
             style={styles.settingRow}
-            onPress={() => Alert.alert('Theme', 'Godzilla Banker runs in custom Cyber Black & Electric Blue automotive mode.')}
+            onPress={() => Alert.alert('Theme', 'Godzilla Banger runs in custom Cyber Black & Electric Blue automotive mode.')}
             activeOpacity={0.7}
             accessibilityLabel="Theme settings"
             accessibilityRole="button"
@@ -161,11 +161,11 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({
               if (onOpenAbout) {
                 onOpenAbout();
               } else {
-                Alert.alert('About Godzilla Banker', 'Godzilla Banker v2.0.0\nHigh-end automotive beat sequencer & relay controller.');
+                Alert.alert('About Godzilla Banger', 'Godzilla Banger v2.0.0\nHigh-end automotive beat sequencer & relay controller.');
               }
             }}
             activeOpacity={0.7}
-            accessibilityLabel="About Godzilla Banker"
+            accessibilityLabel="About Godzilla Banger"
             accessibilityRole="button"
           >
             <View style={styles.rowLeft}>
@@ -182,8 +182,8 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({
 
           <View style={styles.brandContainer}>
             <Text style={styles.brandTitle}>GODZILLA</Text>
-            <Text style={styles.brandSubtitle}>BANKER</Text>
-            <Text style={styles.slogan}>BEATS • BUILD • BANK</Text>
+            <Text style={styles.brandSubtitle}>BANGER</Text>
+            <Text style={styles.slogan}>BEATS • BUILD • BANG</Text>
             <Text style={styles.version}>v2.0.0</Text>
           </View>
         </View>

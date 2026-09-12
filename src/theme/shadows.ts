@@ -1,4 +1,4 @@
-// Electric Blue & Cyan Shadows & Glows for Godzilla Banker
+// Electric Blue & Cyan Shadows & Glows for Godzilla Banger
 
 export const SHADOWS = {
   // Electric Blue neon glow for active elements

@@ -63,7 +63,7 @@ export const DeviceModal: React.FC<DeviceModalProps> = ({
             <View style={styles.titleWrap}>
               <GodzillaMasterEmblem size={34} borderRadius={8} />
               <View style={styles.titleTextCol}>
-                <Text style={styles.title}>CONNECT GODZILLA BANKER</Text>
+                <Text style={styles.title}>CONNECT GODZILLA BANGER</Text>
                 <Text style={styles.subtitle}>ESP32 Super Mini • Real BLE Hardware</Text>
               </View>
             </View>
@@ -247,7 +247,7 @@ export const DeviceModal: React.FC<DeviceModalProps> = ({
                         <View style={styles.troubleCard}>
                           <Text style={styles.troubleTitle}>Hardware Quick-Check:</Text>
                           <Text style={styles.troubleItem}>• ESP32 Super Mini powered via USB-C (5V)</Text>
-                          <Text style={styles.troubleItem}>• Firmware flashed (godzilla_banker_esp32.ino)</Text>
+                          <Text style={styles.troubleItem}>• Firmware flashed (godzilla_banger_esp32.ino)</Text>
                           <Text style={styles.troubleItem}>• Phone Bluetooth & Location turned ON</Text>
                         </View>
                       </>

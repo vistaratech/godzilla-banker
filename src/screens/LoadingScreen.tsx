@@ -99,11 +99,11 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onFinish }) => {
         {/* Brand */}
         <View style={styles.brandBlock}>
           <Text style={styles.brandTitle}>GODZILLA</Text>
-          <Text style={styles.brandSub}>BANKER</Text>
+          <Text style={styles.brandSub}>BANGER</Text>
         </View>
 
         {/* Tagline */}
-        <Text style={styles.tagline}>BEATS  •  BUILD  •  BANK</Text>
+        <Text style={styles.tagline}>BEATS  •  BUILD  •  BANG</Text>
       </Animated.View>
 
       {/* Bottom loading section */}

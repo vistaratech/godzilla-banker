@@ -1,5 +1,5 @@
 /**
- * Godzilla Banker / Godzilla Banger — Shared Types
+ * Godzilla Banger — Shared Types
  */
 
 export type PinState = 'ON' | 'OFF';

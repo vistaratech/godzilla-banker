@@ -1,7 +1,7 @@
-# Godzilla Banker — BLE Data Protocol
+# Godzilla Banger — BLE Data Protocol
 
 Custom GATT service. UUIDs must match exactly between
-`src/services/BLEManager.ts` and `firmware/godzilla_banker_esp32.ino`.
+`src/services/BLEManager.ts` and `firmware/godzilla_banger_esp32.ino`.
 
 | Role       | UUID                                   | Properties |
 |------------|-----------------------------------------|------------|

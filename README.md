@@ -1,4 +1,4 @@
-# Godzilla Banker
+# Godzilla Banger
 
 Mobile control center for drawing/mapping beat patterns and syncing them
 to an ESP32-driven relay over BLE.
@@ -6,8 +6,8 @@ to an ESP32-driven relay over BLE.
 ## App setup (Expo, bare/dev-client — BLE isn't available in Expo Go)
 
 ```bash
-npx create-expo-app godzilla-banker -t expo-template-blank-typescript
-cd godzilla-banker
+npx create-expo-app godzilla-banger -t expo-template-blank-typescript
+cd godzilla-banger
 npx expo install react-native-ble-plx react-native-svg @react-native-community/slider
 npm install buffer
 npx expo prebuild
@@ -25,7 +25,7 @@ need to request `BLUETOOTH_SCAN` / `BLUETOOTH_CONNECT` (API 31+) or
 
 1. Arduino IDE → Boards Manager → install the **esp32** board package.
 2. Library Manager → install **ArduinoJson** (v6.x).
-3. Open `firmware/godzilla_banker_esp32.ino`, set `RELAY_PIN` to whatever
+3. Open `firmware/godzilla_banger_esp32.ino`, set `RELAY_PIN` to whatever
    GPIO your relay module's IN pin is wired to, flash to the board.
 4. Power the ESP32 — it advertises as `GODZILLA-<chip-id-suffix>`.
 
@@ -39,7 +39,7 @@ src/services/BLEManager.ts        # scan/connect/RSSI + command protocol
 src/components/Header.tsx         # title + BT status/RSSI badge
 src/components/BeatCanvas.tsx     # tap-to-pin canvas + playback scrubber
 src/components/ControlPanel.tsx   # play/pause/clear/sync, BPM slider, override
-firmware/godzilla_banker_esp32.ino
+firmware/godzilla_banger_esp32.ino
 docs/DATA_PROTOCOL.md             # exact wire format, read this before touching either side
 ```
 
