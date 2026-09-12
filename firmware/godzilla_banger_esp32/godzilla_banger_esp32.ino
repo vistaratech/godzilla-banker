@@ -45,7 +45,7 @@
 #define COMMAND_CHAR_UUID   "6e400002-b5a3-f393-e0a9-e50e24dcca9e" // WRITE
 #define STATUS_CHAR_UUID    "6e400003-b5a3-f393-e0a9-e50e24dcca9e" // NOTIFY
 
-#define DEVICE_NAME_PREFIX "GODZILLA-SUPERMINI-"
+#define DEVICE_NAME "Godzilla Banger"
 #define MAX_TRIGGERS 256
 #define STATUS_NOTIFY_INTERVAL_MS 200
 #define SYNC_BUFFER_SIZE 8192
@@ -249,7 +249,7 @@ void setup() {
   Serial.printf("  ESP32 GPIO %d       -> Relay IN\n", RELAY_PIN);
   Serial.println("=================================\n");
 
-  String deviceName = String(DEVICE_NAME_PREFIX) + String((uint32_t)(ESP.getEfuseMac() & 0xFFFF), HEX);
+  String deviceName = String(DEVICE_NAME);
   BLEDevice::init(deviceName.c_str());
 
   BLEServer *server = BLEDevice::createServer();
@@ -274,6 +274,8 @@ void setup() {
   BLEAdvertising *advertising = BLEDevice::getAdvertising();
   advertising->addServiceUUID(SERVICE_UUID);
   advertising->setScanResponse(true);
+  advertising->setMinPreferred(0x06); // iOS fast connect optimization (7.5ms)
+  advertising->setMaxPreferred(0x12); // iOS max interval (22.5ms)
   BLEDevice::startAdvertising();
 
   Serial.print("Advertising as ");
