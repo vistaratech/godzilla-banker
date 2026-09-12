@@ -1,5 +1,7 @@
 import React from 'react';
-import { View, Text, StyleSheet, StyleProp, ViewStyle } from 'react-native';
+import { View, Image, StyleSheet, StyleProp, ViewStyle } from 'react-native';
+
+const GODZILLA_BANGER_EMBLEM = require('../../assets/images/godzilla_banger_emblem.jpg');
 
 interface GodzillaMasterEmblemProps {
   size?: number;
@@ -13,11 +15,9 @@ export const GodzillaMasterEmblem: React.FC<GodzillaMasterEmblemProps> = ({
   size = 36,
   borderRadius = 8,
   showGlow = true,
-  borderColor = 'rgba(255, 255, 255, 0.25)',
+  borderColor = 'rgba(0, 240, 255, 0.4)',
   style,
 }) => {
-  const fontSize = Math.max(10, size * 0.45);
-
   return (
     <View
       style={[
@@ -27,24 +27,20 @@ export const GodzillaMasterEmblem: React.FC<GodzillaMasterEmblemProps> = ({
           height: size,
           borderRadius,
           borderColor,
-          shadowColor: showGlow ? '#FFFFFF' : 'transparent',
+          shadowColor: showGlow ? '#00D2FF' : 'transparent',
         },
         style,
       ]}
     >
-      {/* Inner circle */}
-      <View
-        style={[
-          styles.innerCircle,
-          {
-            width: size * 0.72,
-            height: size * 0.72,
-            borderRadius: (size * 0.72) / 2,
-          },
-        ]}
-      >
-        <Text style={[styles.monogram, { fontSize }]}>G</Text>
-      </View>
+      <Image
+        source={GODZILLA_BANGER_EMBLEM}
+        style={{
+          width: size - 2,
+          height: size - 2,
+          borderRadius: Math.max(2, borderRadius - 1),
+        }}
+        resizeMode="cover"
+      />
 
       {/* Chrome glass sheen overlay */}
       <View
