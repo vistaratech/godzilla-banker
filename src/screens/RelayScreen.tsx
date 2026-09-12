@@ -81,7 +81,7 @@ export const RelayScreen: React.FC<RelayScreenProps> = ({
                 <BluetoothIcon size={18} color={isConnected ? '#00D2FF' : '#64748B'} />
               </View>
               <View>
-                <Text style={styles.deviceTitle}>GODZILLA-ESP32 RELAY</Text>
+                <Text style={styles.deviceTitle}>GODZILLA BANGER CONTROLLER</Text>
                 <Text style={styles.deviceSub}>
                   {isConnected ? 'Active BLE Link • Channel 1' : 'Hardware Disconnected'}
                 </Text>
@@ -203,7 +203,7 @@ export const RelayScreen: React.FC<RelayScreenProps> = ({
           </View>
           <TouchableOpacity
             style={styles.syncBtn}
-            onPress={() => alert('Pattern Synced to ESP32 Flash')}
+            onPress={() => alert('Pattern Synced to Device')}
             activeOpacity={0.7}
           >
             <Text style={styles.syncBtnText}>SYNC PATTERN</Text>

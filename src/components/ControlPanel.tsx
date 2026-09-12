@@ -129,11 +129,11 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
             disabled={!bleConnected}
           >
             <AntennaIcon size={16} color={COLORS.atomicCyan} />
-            <Text style={styles.syncBtnText}>SYNC TO ESP32</Text>
+            <Text style={styles.syncBtnText}>SYNC TO DEVICE</Text>
           </TouchableOpacity>
 
           <View style={styles.overrideBlock}>
-            <Text style={styles.overrideLabel}>MANUAL RELAY</Text>
+            <Text style={styles.overrideLabel}>MANUAL PULSE</Text>
             <View style={styles.overrideToggle}>
               <Text style={[styles.overrideState, { color: manualOverride ? COLORS.atomicGreen : COLORS.textMuted }]}>
                 {manualOverride ? 'ON' : 'OFF'}

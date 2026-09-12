@@ -64,7 +64,7 @@ export const DeviceModal: React.FC<DeviceModalProps> = ({
               <GodzillaMasterEmblem size={34} borderRadius={8} />
               <View style={styles.titleTextCol}>
                 <Text style={styles.title}>CONNECT GODZILLA BANGER</Text>
-                <Text style={styles.subtitle}>ESP32 Super Mini • Real BLE Hardware</Text>
+                <Text style={styles.subtitle}>Wireless Hardware Controller</Text>
               </View>
             </View>
             <TouchableOpacity
@@ -85,9 +85,9 @@ export const DeviceModal: React.FC<DeviceModalProps> = ({
                 <BluetoothIcon size={28} color="#00D2FF" />
               </View>
 
-              <Text style={styles.connectedTitle}>ESP32 SUPER MINI LINKED</Text>
+              <Text style={styles.connectedTitle}>GODZILLA BANGER LINKED</Text>
               <Text style={styles.connectedDeviceName}>
-                {connectedDevice?.name || 'GODZILLA-SUPERMINI'}
+                {connectedDevice?.name || 'GODZILLA BANGER'}
               </Text>
               {connectedDevice?.id && (
                 <Text style={styles.connectedDeviceId}>ID: {connectedDevice.id}</Text>
@@ -97,7 +97,7 @@ export const DeviceModal: React.FC<DeviceModalProps> = ({
                 <View style={styles.statusDotRow}>
                   <View style={styles.liveGreenDot} />
                   <Text style={styles.connectedSubText}>
-                    Relay Pin (GPIO 7) active & synced to 60-Step Kick 808
+                    Hardware link active & synced to 60-Step Kick 808
                   </Text>
                 </View>
               </View>
@@ -109,11 +109,11 @@ export const DeviceModal: React.FC<DeviceModalProps> = ({
                     style={styles.testRelayBtn}
                     onPress={onTestRelay}
                     activeOpacity={0.8}
-                    accessibilityLabel="Test Relay Click"
+                    accessibilityLabel="Test Pulse"
                     accessibilityRole="button"
                   >
                     <ZapIcon size={14} color="#030712" />
-                    <Text style={styles.testRelayBtnText}>TEST RELAY CLICK</Text>
+                    <Text style={styles.testRelayBtnText}>TEST BEAT PULSE</Text>
                   </TouchableOpacity>
                 )}
 
@@ -121,10 +121,10 @@ export const DeviceModal: React.FC<DeviceModalProps> = ({
                   style={styles.disconnectBtn}
                   onPress={onDisconnect}
                   activeOpacity={0.75}
-                  accessibilityLabel="Disconnect ESP32"
+                  accessibilityLabel="Disconnect Device"
                   accessibilityRole="button"
                 >
-                  <Text style={styles.disconnectBtnText}>DISCONNECT HARDWARE</Text>
+                  <Text style={styles.disconnectBtnText}>DISCONNECT CONTROLLER</Text>
                 </TouchableOpacity>
               </View>
             </View>
@@ -139,7 +139,7 @@ export const DeviceModal: React.FC<DeviceModalProps> = ({
                   </View>
                   <Text style={styles.btOffText}>
                     Bluetooth is currently switched OFF on this phone. You must turn ON Bluetooth
-                    before scanning or connecting to your nearby ESP32 Super Mini.
+                    before scanning or connecting to your nearby Godzilla Banger device.
                   </Text>
                   {onEnableBluetooth && (
                     <TouchableOpacity
@@ -162,7 +162,7 @@ export const DeviceModal: React.FC<DeviceModalProps> = ({
                   <Text style={styles.expoGoBannerTitle}>📱 EXPO GO ENVIRONMENT</Text>
                   <Text style={styles.expoGoBannerText}>
                     Mock devices have been disabled. Real Bluetooth LE discovery requires an Expo
-                    Development Build (npx expo run:android). Real ESP32 Super Mini boards will be
+                    Development Build (npx expo run:android). Real Godzilla Banger devices will be
                     enlisted once running natively.
                   </Text>
                 </View>
@@ -196,21 +196,21 @@ export const DeviceModal: React.FC<DeviceModalProps> = ({
                   onPress={onScan}
                   disabled={isScanning || isConnecting}
                   activeOpacity={0.75}
-                  accessibilityLabel="Scan for ESP32 Super Mini"
+                  accessibilityLabel="Scan for Godzilla Banger"
                   accessibilityRole="button"
                 >
                   {isScanning ? (
                     <View style={styles.scanLoadingRow}>
                       <ActivityIndicator size="small" color="#030712" />
-                      <Text style={styles.scanLoadingText}>SCANNING FOR REAL HARDWARE...</Text>
+                      <Text style={styles.scanLoadingText}>SCANNING FOR GODZILLA BANGER...</Text>
                     </View>
                   ) : isConnecting ? (
                     <View style={styles.scanLoadingRow}>
                       <ActivityIndicator size="small" color="#030712" />
-                      <Text style={styles.scanLoadingText}>CONNECTING TO ESP32...</Text>
+                      <Text style={styles.scanLoadingText}>CONNECTING TO DEVICE...</Text>
                     </View>
                   ) : (
-                    <Text style={styles.scanBtnText}>SCAN FOR ESP32 SUPER MINI</Text>
+                    <Text style={styles.scanBtnText}>SCAN FOR GODZILLA BANGER</Text>
                   )}
                 </TouchableOpacity>
               )}
@@ -234,21 +234,21 @@ export const DeviceModal: React.FC<DeviceModalProps> = ({
                         <ActivityIndicator size="large" color="#00D2FF" style={{ marginBottom: 12 }} />
                         <Text style={styles.emptyTitle}>Scanning Bluetooth Frequencies...</Text>
                         <Text style={styles.emptySubText}>
-                          Listening for real ESP32 Super Mini broadcasts nearby.{'\n'}
-                          Ensure your ESP32 board is powered ON (LED glowing).
+                          Listening for Godzilla Banger broadcasts nearby.{'\n'}
+                          Ensure your device is powered ON (indicator glowing).
                         </Text>
                       </>
                     ) : (
                       <>
                         <Text style={styles.emptyTitle}>No Real Devices Discovered</Text>
                         <Text style={styles.emptySubText}>
-                          Tap "SCAN FOR ESP32 SUPER MINI" above to detect your hardware.
+                          Tap "SCAN FOR GODZILLA BANGER" above to detect your device.
                         </Text>
                         <View style={styles.troubleCard}>
-                          <Text style={styles.troubleTitle}>Hardware Quick-Check:</Text>
-                          <Text style={styles.troubleItem}>• ESP32 Super Mini powered via USB-C (5V)</Text>
-                          <Text style={styles.troubleItem}>• Firmware flashed (godzilla_banger_esp32.ino)</Text>
+                          <Text style={styles.troubleTitle}>Device Quick-Check:</Text>
+                          <Text style={styles.troubleItem}>• Device powered ON (indicator glowing)</Text>
                           <Text style={styles.troubleItem}>• Phone Bluetooth & Location turned ON</Text>
+                          <Text style={styles.troubleItem}>• Device within wireless range (&lt;10m)</Text>
                         </View>
                       </>
                     )}
@@ -276,9 +276,9 @@ export const DeviceModal: React.FC<DeviceModalProps> = ({
                           <View style={styles.targetBadgeRow}>
                             <View style={styles.targetBadge}>
                               <ZapIcon size={10} color="#030712" />
-                              <Text style={styles.targetBadgeText}>ESP32 SUPER MINI</Text>
+                              <Text style={styles.targetBadgeText}>GODZILLA BANGER</Text>
                             </View>
-                            <Text style={styles.targetLabel}>TARGET CONTROLLER</Text>
+                            <Text style={styles.targetLabel}>TARGET DEVICE</Text>
                           </View>
                         )}
                         <Text style={[styles.deviceName, isEsp32 && styles.esp32DeviceName]}>

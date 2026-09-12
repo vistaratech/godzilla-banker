@@ -111,7 +111,7 @@ export class GodzillaBLEManager {
       } else {
         Alert.alert(
           'Turn ON Bluetooth',
-          'Please turn ON Bluetooth in your phone settings to connect to your ESP32 Super Mini.'
+          'Please turn ON Bluetooth in your phone settings to connect to your Godzilla Banger device.'
         );
         return false;
       }
@@ -119,7 +119,7 @@ export class GodzillaBLEManager {
       console.warn('Could not auto-enable Bluetooth:', err);
       Alert.alert(
         'Turn ON Bluetooth',
-        'Please turn ON Bluetooth in your phone settings to connect to your ESP32 Super Mini.'
+        'Please turn ON Bluetooth in your phone settings to connect to your Godzilla Banger device.'
       );
       return false;
     }
@@ -200,7 +200,7 @@ export class GodzillaBLEManager {
         this.setStatus('disconnected');
         Alert.alert(
           'Mobile Bluetooth is OFF',
-          'Your phone\'s Bluetooth is currently turned OFF. Please turn ON Bluetooth to search for your ESP32 Super Mini.',
+          'Your phone\'s Bluetooth is currently turned OFF. Please turn ON Bluetooth to search for your Godzilla Banger device.',
           [
             { text: 'Cancel', style: 'cancel' },
             {
@@ -225,7 +225,7 @@ export class GodzillaBLEManager {
       this.setStatus('error');
       Alert.alert(
         'Permissions Needed',
-        'Bluetooth and Location permissions are required to scan for nearby ESP32 Super Mini boards.'
+        'Bluetooth and Location permissions are required to scan for nearby Godzilla Banger devices.'
       );
       return;
     }
@@ -267,7 +267,7 @@ export class GodzillaBLEManager {
               const displayName =
                 name.length > 0
                   ? name
-                  : `ESP32 Super Mini (${device.id.slice(-5)})`;
+                  : `Godzilla Banger (${device.id.slice(-5)})`;
 
               const item: BLEDeviceItem = {
                 id: device.id,
@@ -347,7 +347,7 @@ export class GodzillaBLEManager {
       const selected = this.scannedDevicesMap.get(deviceId);
       const lite: BleDeviceLite = {
         id: connected.id,
-        name: connected.name || selected?.name || 'ESP32 Super Mini',
+        name: connected.name || selected?.name || 'Godzilla Banger',
       };
       this.connectedDevice = lite;
       this.setStatus('connected', lite);

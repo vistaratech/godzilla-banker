@@ -16,8 +16,8 @@
       "bundleIdentifier": "com.godzilla.banger",
       "icon": "./assets/images/godzilla_banger_emblem.jpg",
       "infoPlist": {
-        "NSBluetoothAlwaysUsageDescription": "Godzilla Banger needs Bluetooth to connect to and control the ESP32 beat relay.",
-        "NSBluetoothPeripheralUsageDescription": "Godzilla Banger needs Bluetooth to communicate with your ESP32 Super Mini relay hardware."
+        "NSBluetoothAlwaysUsageDescription": "Godzilla Banger needs Bluetooth to connect to and control your Godzilla Banger device.",
+        "NSBluetoothPeripheralUsageDescription": "Godzilla Banger needs Bluetooth to communicate with your Godzilla Banger hardware."
       }
     },
     "android": {
@@ -43,7 +43,7 @@
             "peripheral",
             "central"
           ],
-          "bluetoothAlwaysPermission": "Allow Godzilla Banger to connect to your ESP32 device."
+          "bluetoothAlwaysPermission": "Allow Godzilla Banger to connect to your Godzilla Banger device."
         }
       ],
       "expo-audio"

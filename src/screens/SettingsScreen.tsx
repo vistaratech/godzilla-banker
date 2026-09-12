@@ -161,7 +161,7 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({
               if (onOpenAbout) {
                 onOpenAbout();
               } else {
-                Alert.alert('About Godzilla Banger', 'Godzilla Banger v2.0.0\nHigh-end automotive beat sequencer & relay controller.');
+                Alert.alert('About Godzilla Banger', 'Godzilla Banger v2.0.0\nHigh-end automotive beat sequencer & audio controller.');
               }
             }}
             activeOpacity={0.7}

@@ -84,7 +84,7 @@ export const AboutScreen: React.FC<AboutScreenProps> = ({ onBack, onOpenMenu }) 
             </View>
             <View style={styles.specContent}>
               <Text style={styles.specLabel}>Hardware Link</Text>
-              <Text style={styles.specValue}>ESP32 Bluetooth Low Energy</Text>
+              <Text style={styles.specValue}>Ultra-Fast Wireless Link 5.0</Text>
             </View>
           </View>
         </View>
@@ -93,7 +93,7 @@ export const AboutScreen: React.FC<AboutScreenProps> = ({ onBack, onOpenMenu }) 
         <View style={styles.card}>
           <Text style={styles.cardTitle}>THE CONCEPT</Text>
           <Text style={styles.paragraph}>
-            Godzilla Banger fuses high-precision automotive engineering with a modern, tactile music sequencer. Designed for rapid beat construction, hardware relay triggering, and uncompromising dark aesthetics.
+            Godzilla Banger fuses high-precision automotive engineering with a modern, tactile music sequencer. Designed for rapid beat construction, high-speed pulse triggering, and uncompromising dark aesthetics.
           </Text>
         </View>
 
@@ -117,8 +117,8 @@ export const AboutScreen: React.FC<AboutScreenProps> = ({ onBack, onOpenMenu }) 
           </View>
 
           <View style={styles.diagRow}>
-            <Text style={styles.diagKey}>HARDWARE PROTOCOL</Text>
-            <Text style={styles.diagVal}>GZ-RELAY v1.2</Text>
+            <Text style={styles.diagKey}>SYSTEM PROTOCOL</Text>
+            <Text style={styles.diagVal}>GZ-PULSE v2.0</Text>
           </View>
         </View>
 
